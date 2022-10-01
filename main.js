@@ -9,6 +9,7 @@ function start(){
 
 server.get("/", function(req, resp){
     resp.send("<h1>Hello World!<h1>");
+    resp.send("<p>We are located in Seneca College </p>");
 })
 
 server.get("/contact", function(req, resp){
@@ -23,9 +24,11 @@ server.get("/about/student", function(req, resp){
     resp.send("<p>Our students are perfect </p>");
 })
 
+/*
 server.get("/index", function(req, resp){
     resp.sendFile(path.join(__dirname,"/index.html"));
 })
+*/
 
 server.get("/*", function(req, resp){
     resp.send("<h1>Resource not available! <br> Please correct the request link</h1>");
