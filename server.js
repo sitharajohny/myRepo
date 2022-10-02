@@ -25,7 +25,7 @@ app.post('/profile', (req, res) => {
     res.send('Admin Homepage')
   })
   
-  //http://localhost:3000/user/100
+  //http://localhost:3000/user/1000
   app.get("/user/:id", (req, res)=> {
         res.send(`User ID: ${req.params.id}`);
       }
